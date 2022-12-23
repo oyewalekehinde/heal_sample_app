@@ -13,11 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Bastion HMO',
+      title: 'Kennedia HMO',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Bastion HMO'),
+      home: const MyHomePage(title: 'Kennedia HMO'),
     );
   }
 }
@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Welcome To Bastion Health',
+              'Welcome To Kennedia Health',
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(
@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Container(
                 width: MediaQuery.of(context).size.width * 0.8,
-                child: Image.asset("assets/bastion.png"))
+                child: Image.asset("assets/kennedia.png"))
           ],
         ),
       ),

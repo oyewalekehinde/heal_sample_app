@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:developer';
 
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
@@ -696,6 +697,7 @@ class _CallDoctorPageState extends State<CallDoctorPage> {
                                 ConsultationResponse consultation =
                                     ConsultationResponse.fromJson(
                                         jsonDecode(response.body));
+                                log(consultation.data?.url ?? "");
                                 final route = MaterialPageRoute(
                                     builder: (context) => CallScreen(
                                           url: consultation.data!.url!,
